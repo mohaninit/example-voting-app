@@ -9,7 +9,7 @@ pipeline {
   stages{
       stage(one){
           steps{
-              echo 'Compiling worker app'
+              echo 'Compiling worker app..'
               dir('worker'){
                 sh 'mvn compile'
               }
@@ -17,7 +17,7 @@ pipeline {
       }
       stage(two){
           steps{
-              echo 'Running Unit Tets on worker app'
+              echo 'Running Unit Tets on worker app..'
               
           }
       }
@@ -35,3 +35,4 @@ pipeline {
     }
   }
 }
+
